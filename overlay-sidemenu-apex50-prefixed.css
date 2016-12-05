@@ -1,0 +1,193 @@
+/* ************************ */
+/* Overlay Side Menu        */
+/* ************************ */
+
+/* Begin of standard UT CSS Override */
+@media only screen and (min-width: 641px) {
+    .overlaySideMenu.apex-side-nav .t-Body-title {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav .t-Body-content {
+        margin-left: 0;
+    }
+}
+
+.overlaySideMenu.apex-side-nav .t-Body-main {
+    margin-left: 0;
+}
+
+.overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-main {
+    margin-left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-title,
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-side,
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-content {
+        margin-left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-main {
+        margin-left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-title,
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-content,
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-main {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-title {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-content {
+        margin-left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--hideLeft .t-Body-main {
+        margin-left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-title,
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-side,
+    .overlaySideMenu.apex-side-nav.js-navExpanded .t-Body-content {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-main {
+        margin-left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu .t-Body-side {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-side {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-content {
+        margin-left: 240px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-main {
+        margin-left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-title {
+        margin-left: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navExpanded.t-PageBody--showLeft .t-Body-content {
+        margin-left: 240px;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+.overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-nav,
+.overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-nav .t-TreeNav {
+    width: 0;
+}
+
+.overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-content,
+.overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-title,
+.overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-side {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-nav {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-title,
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-side,
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-content {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-title {
+        margin-left: 0;
+        left: 0;
+    }
+
+    .overlaySideMenu .t-Body-side {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navCollapsed.t-PageBody--showLeft .t-Body-side {
+        left: 0;
+    }
+
+    .overlaySideMenu.apex-side-nav.js-navCollapsed.t-PageBody--showLeft .t-Body-content {
+        margin-left: 240px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .overlaySideMenu.apex-side-nav.js-navCollapsed .t-Body-side {
+        left: 0;
+    }
+}
+
+/* Position the side menu on top of the content */
+.overlaySideMenu.apex-side-nav .t-Body-nav {
+	position: absolute;
+    z-index: 1000;
+}
+
+/* The menu is inside the body, so make sure that the body is at least
+   as tall as the screen, otherwise it will not be 100% of the visual height */
+.overlaySideMenu.apex-side-nav .t-Body {
+	min-height: 100vh;
+}
+
+/* Fixes the bug where you can click on menu items when the navigation menu is collapsed */
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel>.a-TreeView-content .a-TreeView-label {
+    visibility: hidden;
+}
+/* End of standard UT CSS Override */
+
+/* Side menu width */
+.overlaySideMenu .t-Body-nav {
+    width: 200px;
+}
+
+/* Option to have a fullscreen side menu */
+.overlaySideMenu.overlaySideMenu--fullscreen .t-Body-nav {
+    width: 100vw;
+}
